@@ -1,0 +1,44 @@
+/*=== start default style */
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    margin:0;
+    padding:0;
+}
+img
+{
+    max-width: 100%;
+}
+button
+{
+    cursor: pointer;
+    display:block;
+}
+a,a:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+dl, ol, ul
+{
+    margin: 0;
+}
+form
+{
+     overflow: hidden;
+}
+span
+{
+    vertical-align: middle;
+}
+.esc
+{
+    cursor: pointer;
+}
+/*=== end default style */

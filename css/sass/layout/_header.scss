@@ -1,0 +1,94 @@
+//header style
+/*============start header===========*/
+header
+{
+	@at-root .top-nav
+	{
+		padding:0.5rem 0;
+		@at-root .logo img
+		{
+			height: 40px;//size img logo 
+		}
+		.avatar
+		{
+			background: #fff;
+	    	border-radius: 50%;
+		}
+		.right-btn
+		{
+			font-size: 1.1rem;
+			text-transform: uppercase;
+			word-spacing: 0.5rem;
+			padding: 0.5rem 0;
+			text-align: right;
+			a
+			{
+				color: inherit;
+			}
+		}
+	//setting style
+		.setting
+		{
+			cursor: pointer;
+			ul
+			{
+				padding: 0.5rem;
+	    		border: 1px solid transparent;
+	    		line-height: 1;
+	    		text-align: center;
+
+			}
+			li
+			{
+				padding: 0.5rem;
+				a
+				{
+					background: url('bg/flag.jpg') no-repeat;
+					width: 30px;
+		    		height: 20px;
+		    		display:inline-block;
+		    		background-position: 0;
+		    		@include perfix(background-size,cover,(webkit moz o no));
+				}
+			} 
+	//loop for flag icon position
+			@for $i from 2 through 6 
+			{
+			  li:nth-of-type(#{$i}) a
+			  {
+			  	background-position:#{($i - 1)*20}unquote("%");
+			  }
+			}
+		}
+		//main-dropmenu style
+		.main-dropmenu
+		{
+			border:1px solid transparent;
+			position: absolute;
+	    	top: auto;
+	    	right: 0;
+	    	display:none;
+	    	z-index: 999;
+	    	padding:0.5rem 1rem;
+	    	will-change: display;
+	    	overflow: hidden;
+	    	&.show
+	    	{
+	    		display:block;
+	    	}
+	    	@at-root .title
+	    	{
+	    		display:none;
+	    		margin-bottom: 0.5rem;
+	    		padding: 1rem;
+	    		text-transform: uppercase;
+	    		font-size: 2rem;
+	    		text-align: center;
+	    	}
+		}
+	}
+}
+/*======start nav===========*/
+@import '_nav';
+/*======end nav===========*/
+/*============end header===========*/

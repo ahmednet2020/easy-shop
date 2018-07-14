@@ -1,0 +1,64 @@
+//rest Restore bootstrap
+/*====start Restore class in bootstrap */
+.container-fluid
+{
+	padding:0;
+	margin:0;
+}
+.list-group-item
+{
+	border:none;
+	padding:0;
+	margin:0;
+	background: transparent;
+}
+.navbar-toggler-icon
+{
+	width: auto;
+    height: auto;
+    content: none;
+}
+.dropdown-menu
+{
+	padding:0.5rem;
+	background: transparent;
+}
+.dropdown-toggle::after
+{
+	content:none;
+}
+.carousel-item
+{
+	will-change: transform,display;
+}
+.carousel-indicators
+{
+	bottom:1.5rem;
+}
+.carousel-indicators li
+{
+	padding: 1rem;
+    @include perfix(border-radius,50%,webkit no);
+    cursor: pointer;
+    width:auto;
+    height:auto;
+}
+.carousel-indicators li::after,
+.carousel-indicators li::before
+{
+	content:none;
+}
+.list-dota
+{
+	list-style-position: inside;
+	list-style-type: disc;
+	li
+	{
+		display: list-item;
+	}
+}
+.form-control:focus
+{
+	box-shadow: none;
+}
+/*====end Restore class in bootstrap*/

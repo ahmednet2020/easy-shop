@@ -1,0 +1,81 @@
+//setting mobile animate
+// body
+// {
+// 	@include transform-style();
+// 	@include perspective(1000px);
+// }
+//dropdown-menu
+@include media(lg)
+{
+	.dropdown-menu
+	{
+		display: block;
+		@include scale(0);
+		@include transition(transform 0.5s ease);
+		@include transform-origin(top);
+		&.show
+		{
+			@include scale(1);	
+		}
+	}
+}
+@include media(xs)
+{
+	.left-animate
+	{
+	@include translateX(-150%);
+	@include transition(transform 0.5s linear);
+	will-change: transform;
+	}
+	.left-animate.show
+	{
+		@include translateX(0%);
+	}
+}
+//nav mobile animate
+@include media(maxlg)
+{
+	.navbar-collapse
+	{
+	@include translateX(-150%);
+	@include transition(transform 0.5s linear);
+	will-change: transform;
+	}
+	.navbar-collapse.show
+	{
+		@include translateX(0%);
+	}
+}
+//slider animate
+.slider
+{
+	.slider-text
+	{
+		@include translateY(-200%);
+		@include transition(transform 0.3s ease);
+	}
+	.btn
+	{
+		@include translateY(700%);
+		@include transition(transform 0.3s ease);	
+	}
+	.carousel-item.active
+	{
+		.slider-text,
+		.btn
+		{
+			@include translateY(0);
+		}
+	}
+}
+//list-color
+.color-model
+{
+	will-change: transform;
+	@include translateX(0);
+	@include transition(transform 0.5s ease);
+	&.hidden
+	{
+		@include translateX(-85%);
+	}	
+}

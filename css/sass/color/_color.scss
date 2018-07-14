@@ -1,0 +1,204 @@
+/*====start color themes=====*/
+body
+{
+	@extend %textback;//bootstrap Restore
+}
+//bootstrap color
+.form-control:focus
+{
+	@extend %textback;
+	@extend %borderblue;
+}
+//button color blue
+.btn-primary
+{
+	@extend %textwhite;
+	@extend %bgblue;
+	&:hover
+	{
+		@extend %bgwhite;
+		@extend %textblue;
+	}
+}
+.btn-black
+{
+	@extend %bgwhite;
+	@extend %textback;
+	@extend %borderdark;
+	&:hover,
+	&.active
+	{
+		@extend %bgblue;
+		@extend %textwhite;
+		@extend %borderblue;	
+	}
+}
+.btn-transparent
+{
+	@extend %textwhite;
+	@extend %bgtransparent;
+	&:hover
+	{
+		@extend %textblue;
+	}
+}
+//text color
+.dark-text
+{
+	@extend %textdark;
+}
+.blue-text
+{
+	@extend %textblue;
+	&:focus
+	{
+		@extend %textblue;
+	}
+}
+//top nav color
+.top-nav
+{
+	@extend %bgblack;
+	.right-btn
+	{
+		@extend %textwhite;
+	}
+	.main-dropmenu
+	{
+		@extend %bgwhite;
+		@extend %textdark;
+		@extend %borderblack;
+		ul
+		{
+			@extend %borderblack;	
+		}
+		li a
+		{
+    		@extend %textback;
+    		span
+    		{
+    			@extend %textblue;
+    		}
+    	}
+	}
+	@at-root .title
+	{
+		@extend %bgblue;
+		@extend %textwhite;
+	}
+	.currency ul
+	{
+		@extend %textblue;
+	}
+}
+//navbar color
+.navbar-black
+{
+	.nav-link,
+	.navbar-toggler-icon,
+	.dropdown-menu,.dropdown-item
+	{
+		@extend %textback;
+	}
+	.items-number
+	{
+		@extend %bgblue;
+		@extend %textwhite;
+	}
+	.dropdown-item:focus, .dropdown-item:hover,
+	.nav-item.active .nav-link,
+	.nav-item:hover .nav-link
+	{
+		    @extend %bgtransparent;
+		    @extend %textblue;
+	}
+	.navbar-collapse,.dropdown-menu
+	{
+		@extend %bgwhite;
+	}
+	.item-title
+	{
+		@extend %textblue;	
+	}
+	.item-basket
+	{
+		@extend %bgwhite;
+	}
+}
+//slider color
+.carousel-caption
+{
+	@extend %textwhite;	
+}
+.carousel-indicators li
+{
+	@extend %bgwhite;
+}
+.carousel-indicators .active 
+{
+	@extend %bgblue;
+}
+//item color
+.item
+{
+	@extend %outlineblue;
+	.item-price
+	{
+		@extend %textblue;	
+	}
+	.item-price-old
+	{
+		@extend %textdark;
+	}
+	.item-img
+	{
+
+		@extend %outlineblue;
+	}
+	.item-badge
+	{
+		@extend %bgblue;
+		@extend %textwhite;	
+	}
+	.stars
+	{
+		@extend %textdark;
+		.active
+		{
+			@extend %textblue;
+		}	
+	}
+}
+//footer
+footer
+{
+	@extend %bgblack;
+	.social-icon
+	{
+		@extend %bgblue;
+		@extend %textwhite;	
+		&:hover
+		{
+			@extend %textblue;
+			@extend %bgwhite;
+		}
+	}
+	.list-dota
+	{
+		@extend %textblue;
+		a
+		{
+			@extend %textdark;
+			&:hover
+			{
+				@extend %textwhite;
+			}	
+		}
+	}
+}
+//list-color
+.list-color
+{
+	@extend %gradient;
+}
+/*====end color themes=====*/

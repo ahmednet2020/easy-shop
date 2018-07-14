@@ -1,0 +1,37 @@
+.color-model
+{
+	position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+    .color-icon
+    {
+    	display: inline-block;
+	    margin-left: 0.5rem;
+	    cursor: pointer;
+	    padding: 0 0.5rem;
+	    overflow: hidden;
+    }
+}
+.list-color
+{
+	width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    .btn-color
+    {
+    	height: 25px;
+	    width: 25px;
+	    display: inline-block;
+	    border-radius: 50%;
+	    &.blue
+	    {
+	    	background:#00aeef;
+	    }
+	    &.green
+	    {
+	    	background:#0f0;
+	    }
+    }
+}

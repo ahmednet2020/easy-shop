@@ -1,0 +1,26 @@
+@charset "UTF-8";
+//templet name: shop
+//version: 1.0
+//author: ahmed net
+
+//module
+@import 'module/_var';
+@import 'module/_mixin';
+@import 'module/_normalize';
+@import 'module/_preload';
+@import 'module/_components';
+@import 'module/_typography';
+//layout
+@import 'layout/_header';
+@import 'layout/_section';
+@import 'layout/_footer';
+@import 'layout/_animate';
+//color
+@import 'color/_var';
+//form
+@import 'form/_button';
+@import 'form/_form';
+//mobile
+@import 'mobile/_mobile';
+
+

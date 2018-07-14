@@ -1,0 +1,6 @@
+//select style arrow
+select.form-control
+{
+	@include appearance();
+	background: url('bg/brdown.png') 95% center no-repeat;
+}

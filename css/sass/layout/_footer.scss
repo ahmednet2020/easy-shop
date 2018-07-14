@@ -1,0 +1,50 @@
+footer
+{
+	.about
+	{
+		.btn
+		{
+			font-size: 1.3rem;
+		}
+	}
+	.contact
+	{
+		p
+		{
+			width: 85%;
+		    display: inline-block;
+		    vertical-align: top;
+		    float: right;
+		}
+		.social-icon
+		{
+			border-radius: 50%;
+		    padding: 0.5rem 0.8rem;
+		    text-align: center;
+		    display: inline-block;
+		}
+	}
+	.links
+	{
+		.list-dota
+		{
+			font-size: 1.3rem;
+		}
+	}
+	.link-app
+	{
+		width: 100%;
+    	display: block;
+    	height:50px;
+    	overflow: hidden;
+    	margin: 0.5rem 0;
+    	&.app
+    	{
+    		background: url(bg/apple.png) 0/100% 100% no-repeat;
+    	}
+    	&.play
+    	{
+    		background: url(bg/play.png) 0/100% 100% no-repeat;
+    	}
+	}
+}

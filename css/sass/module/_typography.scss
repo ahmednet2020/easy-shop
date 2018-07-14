@@ -1,0 +1,78 @@
+/*===== start font style ===== */
+//font class
+%fontfamily
+{
+    font-family:'Fira Sans','Raleway',sans-serif;
+}
+%fontheading
+{
+  font-family:'Raleway',sans-serif;
+}
+html, body
+{
+    font-size: 14px;
+    @extend %fontfamily;
+    @include media(xs)
+    {
+        font-size: 12px;
+    }
+    @include media(xl)
+    {
+        font-size: 16px;
+    }
+}
+// p style font
+p
+{
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+//heading style font
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.6;
+    text-transform: capitalize;
+    @extend %fontheading;
+}
+
+h1
+{
+
+    font-size: 4rem;
+}
+
+h2
+{
+    font-size: 3rem;
+}
+
+h3
+{
+    font-size: 2rem;
+}
+
+h4
+{
+    font-size: 1.5rem;
+}
+
+h5
+{
+    font-size: 1.1rem;
+}
+
+h6
+{
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+.underline
+{
+    text-decoration: underline;
+}
+/*===== end font style ===== */

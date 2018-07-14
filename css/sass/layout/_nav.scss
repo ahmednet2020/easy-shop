@@ -1,0 +1,59 @@
+/*=====start nav =======*/
+nav
+{
+	.navbar-collapse
+	{
+		position: relative;
+	}
+	.navbar-nav
+	{
+		font-size: 1.2rem;
+    	text-transform: uppercase;
+	}
+	.dropdown-item
+	{
+		font-size: 1rem;
+	    text-transform: capitalize;
+	    font-weight: normal;
+	    @extend %fontheading;
+	}
+	.nav-item 
+	{
+		padding:0.5rem;
+	}
+	//right box
+	.shop-basket
+	{
+		text-transform: capitalize;
+		display: inline-block;
+		overflow: hidden;
+		.total
+		{
+			font-size:1.2rem;
+		}
+		.price
+		{
+			vertical-align: baseline;
+		}
+	.basket-icon
+		{
+			cursor:pointer;
+			position: relative;
+			display: inline-block;
+		}
+	.items-number
+		{
+			@include perfix(border-radius,50%,webkit no);
+		    width: 60%;
+		    height: 60%;
+		    display: inline-block;
+		    position: absolute;
+		    top: 0%;
+		    left: 20%;
+		    text-align: center;
+		    font-size: 1rem;
+		}
+	}
+}
+//dropdown-menu item goto _item.scss file
+/*=====end nav =======*/

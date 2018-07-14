@@ -1,0 +1,61 @@
+%bgtransparent
+{
+	background-color: transparent;
+}
+%bgblack
+{
+	background-color:$backcolor;
+	color:$whitecolor;
+}
+%bgwhite
+{
+	background-color:$whitecolor;
+}
+%bgblue
+{
+	background-color:$color1;
+}
+%bgdark
+{
+	background-color:$textcolor1;
+}
+//text color
+%textback
+{
+	color:$textcolor2;
+}
+%textdark
+{
+	color:$textcolor1;
+}
+%textblue
+{
+	color:$color1;
+}
+%textwhite
+{
+	color:$whitecolor;
+}
+//border color
+%borderblue
+{
+	border-color:$color1;
+}
+%borderblack
+{
+	border-color:$textcolor1;
+}
+%borderdark
+{
+	border-color:$textcolor2;
+}
+%outlineblue
+{
+	outline-color: rgba($color1,0.5);
+}
+%gradient
+{
+	background: -webkit-linear-gradient(25deg, $color1 0%, $whitecolor 50%, $color1 150%);
+	background: -o-linear-gradient(25deg, $color1 0%, $whitecolor 50%, $color1 150%);
+    background: linear-gradient(25deg, $color1 0%, $whitecolor 50%, $color1 150%);
+}
